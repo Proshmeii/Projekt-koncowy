@@ -1,0 +1,101 @@
+
+.root {
+    box-sizing: border-box;
+}
+
+.layout-header {
+    position: sticky;
+    transition: top .3s;
+    z-index: 1000;
+}
+
+.layout-navi {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+@media (min-width: 1024px) {
+    .layout-navi {
+        padding: 10px 40px
+    }
+}
+
+@media (min-width: 600px) {
+    .layout-navi {
+        height: 90px;
+    }
+}    
+
+.navigation-bar {
+    display: flex; 
+    max-width: 1200px;
+    width: 100%;
+}
+
+img {
+    overflow: clip;
+    overflow-clip-margin: content-box;
+}
+
+.v_align {
+    display: flex;
+    align-items: center;
+}
+
+.logo-mobile {
+    width: 38px;
+    height: 41px;
+
+}
+@media (min-width: 600px) {
+    .logo-mobile {
+        display: none;
+    }
+}
+
+.logo-desktop {
+    width: 120px;
+    height: 64px;
+}
+
+@media (max-width: 600px) {
+    .logo-desktop {
+        display: none;
+    }
+} 
+
+.navi {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .navi {
+        grid-column-gap: 28px;
+        column-gap: 28px;
+    }
+}    
+
+.navi-login-button,
+.navi-home-button,
+.navi-about-button {
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px;
+    text-transform: uppercase;
+    color: white;
+    width: min-content;
+    font-size: 12px;
+}
+
+@media (min-width: 600px) {
+    .navi-login-button,
+    .navi-home-button,
+    .navi-about-button {
+        font-size: 18px;
+    }
+}

@@ -84,18 +84,37 @@ img {
 .navi-about-button {
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 400;
     padding: 4px;
     text-transform: uppercase;
     color: white;
     width: min-content;
     font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+
+    &:hover {
+        color: yellow;
+        border: none;
+        letter-spacing: 1px;
+    }
+
 }
+
 
 @media (min-width: 600px) {
     .navi-login-button,
     .navi-home-button,
     .navi-about-button {
+        font-weight: 400;
         font-size: 18px;
+        font-family: 'Oswald', sans-serif;
+
+        &:hover {
+            color: yellow;
+            box-shadow: 0 0 3px yellow, 0 0 4px yellow, 0 0 5px yellow, 0 0 10px yellow;
+            border: 1px solid yellow;
+            border-radius: 15%;
+            letter-spacing: 1px;
+        }
     }
 }

@@ -1,0 +1,13 @@
+.logout-button {
+    padding-top: 110px;
+}
+@media (max-width: 600px) {
+    .logout-button {
+        padding-top: 41px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .logout-button {
+        padding-top: 90px;
+    }
+}

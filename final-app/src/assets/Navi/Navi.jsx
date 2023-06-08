@@ -1,4 +1,6 @@
 import React from 'react'
+import { useNavigate, Link } from 'react-router-dom';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import './Navi.scss'
@@ -18,9 +20,9 @@ function Navi() {
                                 </a>
                             </div>
                             <div className="navi">
-                                <div className="navi-login-button">Login</div>
-                                <div className="navi-home-button">Home</div>
-                                <div className="navi-about-button">About</div>
+                                <div className="navi-login-button"><Link to="/login" style={{ color: 'inherit', textDecoration: 'none'}}>Login</Link></div>
+                                <div className="navi-home-button"><Link to="/" style={{ color: 'inherit', textDecoration: 'none'}}>Home</Link></div>
+                                <div className="navi-about-button"><Link to="/about" style={{ color: 'inherit', textDecoration: 'none'}}>About</Link></div>
                             </div>
                         </div>
                     </div>

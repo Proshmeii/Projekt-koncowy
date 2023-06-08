@@ -4,7 +4,9 @@
 }
 
 .layout-header {
-    position: sticky;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
     transition: top .3s;
     z-index: 1000;
 }
@@ -86,7 +88,9 @@ img {
     cursor: pointer;
     font-weight: 400;
     padding: 4px;
+    text-decoration: none;;
     text-transform: uppercase;
+    transition: 0.5s;
     color: white;
     width: min-content;
     font-size: 12px;

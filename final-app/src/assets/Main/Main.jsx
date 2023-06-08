@@ -41,7 +41,7 @@ function Main () {
     return (
         <>
             <Navi />
-            <div>
+            <div className="logout-button">
                 <button onClick={handleLogout}>Log Out</button>
             </div>
         </>

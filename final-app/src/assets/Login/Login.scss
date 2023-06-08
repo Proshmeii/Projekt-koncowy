@@ -1,0 +1,73 @@
+.root {
+    box-sizing: border-box;
+}
+
+.login-section {
+    padding-top: 110px;
+}
+@media (max-width: 600px) {
+    .login-section {
+        padding-top: 41px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .login-section {
+        padding-top: 90px;
+    }
+}
+
+.buttons-container {
+    aspect-ratio: 16/9;
+    background-image: url("/images/login_img.jpg");
+    display: flex;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginButtons { 
+    display: flex;
+    margin: 15px;
+}
+
+
+
+.signUpButton, .signInButton {
+    display: flex;
+    border: 0px solid black ;
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    height:100px;
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.5s;
+    color:white;
+
+        &:hover {
+        box-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white,;
+        }
+}
+
+@media (max-width: 600px) {
+    .signUpButton, .signInButton {
+        width: 80px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .signUpButton, .signInButton {
+        width: 120px;
+        height: 80px;
+        font-size: 24px;
+    }
+}
+
+

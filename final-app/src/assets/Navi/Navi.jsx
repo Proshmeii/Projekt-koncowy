@@ -8,6 +8,15 @@ import logoImg from '../../../images/logo_img.png'
 import logoMobileImg from '../../../images/logo_mobile_img.png'
 
 function Navi() {
+
+    const handleClickScroll = () => {
+
+        const element = document.getElementById('about-footer');
+        if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <>
                 <header className="layout-header">
@@ -22,7 +31,7 @@ function Navi() {
                             <div className="navi">
                                 <div className="navi-login-button"><Link to="/login" style={{ color: 'inherit', textDecoration: 'none'}}>Login</Link></div>
                                 <div className="navi-home-button"><Link to="/" style={{ color: 'inherit', textDecoration: 'none'}}>Home</Link></div>
-                                <div className="navi-about-button"><Link to="/about" style={{ color: 'inherit', textDecoration: 'none'}}>About</Link></div>
+                                <div className="navi-about-button" onClick={handleClickScroll}><Link style={{ color: 'inherit', textDecoration: 'none'}}>About</Link></div>
                             </div>
                         </div>
                     </div>

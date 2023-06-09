@@ -70,4 +70,55 @@
     }
 }
 
+.patch-section {
+    aspect-ratio: 16/9;
+    background-image: url("/images/roadmap_img.jpg");
+    display: flex;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.patch-header {
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+@media (max-width: 600px) {
+    .patch-header {
+        font-size: 12px;
+    }
+}
 
+@media (min-width: 600px) and (max-width: 900px) {
+    .patch-header {
+        font-size: 16px;
+    }
+}
+.lobby-maps-section {
+    aspect-ratio: 16/9;
+    background-image: url("/images/maps_lobby_img.png");
+    display: flex;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.about-section {
+    background-color: khaki;
+    width: 100vw;
+    height: 220px;
+}
+.about-header {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.about-text {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}

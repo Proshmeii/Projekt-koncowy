@@ -18,6 +18,11 @@ function SignUp() {
         e.preventDefault();
 
         const { email, password, password_confirm } = e.target.elements;
+        
+        if (password.value !== password_confirm.value) {
+            alert('Passwords must be the same')
+            return;
+        }
 
 
         let { error } = await supabase.auth.signUp({
@@ -26,10 +31,6 @@ function SignUp() {
             password_confirm: password_confirm.value,
         });
 
-        if (password.value !== password_confirm.value) {
-            alert('Passwords must be the same')
-            return;
-        }
 
         if (!error) {
             navigation("/");

@@ -3,7 +3,7 @@
 }
 
 .login-section {
-    padding-top: 110px;
+    padding-top: 90px;
 }
 @media (max-width: 600px) {
     .login-section {
@@ -109,16 +109,27 @@
 .about-section {
     background-color: khaki;
     width: 100vw;
-    height: 220px;
+    height: 17vh;
 }
+
 .about-header {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 24px;
 }
+@media (max-width: 600px) {
+    .about-header {
+        font-size: 16px;
+    }
+}
 .about-text {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
+}
+@media (max-width: 600px) {
+    .about-text {
+        font-size: 10px;
+    }
 }

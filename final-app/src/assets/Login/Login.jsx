@@ -34,6 +34,8 @@ function Login() {
                     <p>Escape from Tarkov is a multiplayer tactical first-person shooter video game in development by Battlestate Games for Windows. The game is set in the fictional Norvinsk region, where a war is taking place between two private military companies (United Security "USEC" and the Battle Encounter Assault Regiment "BEAR"). Players join matches called "raids" in which they fight other players and bots for loot and aim to survive and escape.
                     Escape From Tarkov has been a PC-exclusive game since it was first released in a beta state back in 2017
                     </p>
+                    <br />
+                    <p>TRY IT NOW</p>
                 </div>
         </footer>
         </>

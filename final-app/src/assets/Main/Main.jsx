@@ -22,7 +22,7 @@ function Main () {
     }, []);
 
     const getSession = async() => {
-        const { data, error } = await supabase.auth.getSession()
+        const { data } = await supabase.auth.getSession()
 
         if (!data.session) {
             navigation('/login/signin')

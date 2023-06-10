@@ -1,13 +1,150 @@
-.logout-button {
-    padding-top: 110px;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.root {
+    box-sizing: border-box;
 }
+.logout-button-container {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logout-button {
+    width: 100vw;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    border: 0px solid black;
+    color: white;
+
+
+    &:hover {
+        color: yellow;
+        border: none;
+        letter-spacing: 1px;
+    }
+}
+
+
 @media (max-width: 600px) {
-    .logout-button {
+    .logout-button-container {
         padding-top: 41px;
     }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-    .logout-button {
+    .logout-button-container {
         padding-top: 90px;
     }
 }
+
+.header-img {
+    background-image: url('../../../images/sanitar_img.jpg');
+    aspect-ratio: 16/9;
+    display: flex;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.article-flex-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.article-card {
+    padding: 16px;
+    background-color: #fff;
+    height: fit-content;
+    flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 100%;
+}
+@media (min-width: 1024px) {
+    .article-card {
+        border-radius: 8px;
+        box-shadow: -1px -2px 8px rgba(0,0,0,.05), 2px 4px 8px rgba(0,0,0,.2);
+        padding: 48px;
+        flex-basis: 75%;
+        flex-grow: 0;
+        max-width: 75%;
+    }
+}
+.article-header {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 11px 0p 8px;
+    overflow-wrap: break-word;
+}
+@media (min-width: 1024px) {
+    .article-header {
+        font-size: 40px;
+        line-height: 54px;
+    }
+}
+@media (min-width: 768px) {
+    .article-header {
+        font-size: 30px;
+        line-height: 41px;
+    }
+}
+.article-intro {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    font-family: 'Comfortaa', cursive;
+}
+.article-second-header {
+    overflow-wrap: break-word;
+    display: block;
+    font-size: 14px;
+    margin-block-start: 13px;
+    margin-block-end: 13px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+@media (min-width: 768px) {
+    .article-second-header {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+.first-article-img-container {
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+}
+.first-article-img {
+    aspect-ratio: 16/9;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+@media (min-width: 1024px) {
+    .first-article-img{
+        margin: 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        overflow: hidden;
+    }
+
+}
+
